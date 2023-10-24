@@ -22,15 +22,15 @@ class KategoriController extends Controller
         return redirect('/admin/kategori')->with('Succes','Data Kategori Berhasil Ditambah');
     }
 
-    public function edit($id_kategori){
-        $kategoris=kategori::find($id_kategori);
+    public function edit($kategori_id){
+        $kategoris=kategori::find($kategori_id);
        //dd($id_kategori);
         return view('/admin/edit_kategori', compact('kategoris'));
     }
 
-    public function update($id_kategori, Request $request)  {
+    public function update($kategori_id, Request $request)  {
 
-        $kategoris = kategori::find($id_kategori);
+        $kategoris = kategori::find($kategori_id);
         $kategoris-> update($request->except(['_token', 'submit']));
         return redirect('/admin/kategori')->with('Succes','Data Kategori Berhasil Diubah');
     }

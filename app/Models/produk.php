@@ -4,22 +4,29 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class produk extends Model
 {
     use HasFactory;
 
-    //protected $keyType = 'string';
-    //protected $primaryKey = 'id_produk';
+    protected $keyType = 'string';
+    protected $primaryKey = 'produk_id';
 
     protected $fillable =[
-        'id_produk',
+        'produk_id',
         'nama_produk',
         'harga',
         'stok',
         'deskripsi',
         'ukuran',
         'gambar',
-        'id_kategori'
+        'kategori_id'
     ];
+
+        public function kategori(): BelongsTo
+        {
+            return $this->belongsTo(kategori::class);
+        }
+
 }

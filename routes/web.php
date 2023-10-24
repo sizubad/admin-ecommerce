@@ -24,9 +24,9 @@ Route::get('/', function () {
 Route::get('/admin/kategori', [KategoriController::class, 'index'])->name('admin.kategori');
 Route::get('/admin/tambah_kategori', [KategoriController::class, 'create']);
 Route::post('/admin/simpan_kategori', [KategoriController::class, 'store']);
-Route::get('/admin/{id_kategori}/edit_kategori', [KategoriController::class, 'edit']);
-Route::delete('/admin/{id_kategori}', [KategoriController::class, 'destroy']);
-Route::put('/admin/{id_kategori}', [KategoriController::class, 'update']);
+Route::get('/admin/{kategori_id}/edit_kategori', [KategoriController::class, 'edit']);
+Route::delete('/admin/{kategori_id}', [KategoriController::class, 'destroy']);
+Route::put('/admin/{kategori_id}', [KategoriController::class, 'update']);
 
 Route::get('/admin/produk', [ProdukController::class, 'index'])->name('admin.produk');
 Route::get('/admin/tambah_produk', [ProdukController::class, 'create']);

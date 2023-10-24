@@ -10,9 +10,9 @@
                     <h6 class="mb-4">Tambah kategori</h6>
                     <form>
                         <div class="row mb-3">
-                            <label for="id_kategori" class="col-sm-2 col-form-label">Id Kategori</label>
+                            <label for="kategori_id" class="col-sm-2 col-form-label">Id Kategori</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="id_kategori">
+                                <input type="text" class="form-control" name="kategori_id">
                             </div>
                         </div>
                         <div class="row mb-3">

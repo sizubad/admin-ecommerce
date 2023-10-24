@@ -29,7 +29,7 @@
                                 @foreach ($produks as $index => $produk)
                                    <tr>
                                     <td>{{ $index+1 }}</td>
-                                    <td>{{ $produk->id_produk }}</td>
+                                    <td>{{ $produk->produk_id }}</td>
                                     <td>{{ $produk->nama_produk }}</td>
                                     <td>{{ $produk->harga }}</td>
                                     <td>{{ $produk->stok }}</td>
@@ -37,11 +37,11 @@
                                     <td>{{ $produk->ukuran }}</td>
                                     <td><img class="card-img-top equal-image" src="{{ asset('storage./'.$produk->gambar) }}" alt="" style="width: 40px; height: 40px;"></td>
                                     <td>
-                                        <a href="/admin/{{ $produk->id_produk }}/edit_produk" class="btn btn-success">
+                                        <a href="/admin/{{ $produk->produk_id }}/edit_produk" class="btn btn-success">
                                             <i class="fas fa-edit"></i> Edit
                                         </a>
                                     
-                                        <form action="/admin/{{ $produk->id_produk }}" method="POST">
+                                        <form action="/admin/{{ $produk->produk_id }}" method="POST">
                                             @method('DELETE')
                                             @csrf
                                             <button type="submit" class="btn btn-danger">

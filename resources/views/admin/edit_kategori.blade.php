@@ -1,7 +1,7 @@
 @include('admin.include.header')
 <!-- Content Start -->
 <div class="content">
-<form action="/admin/{{ $kategoris->id_kategori }}" method="POST">
+<form action="/admin/{{ $kategoris->kategori_id }}" method="POST">
     @method ('put')
     @csrf
     <div class="container-fluid pt-4 px-4">
@@ -11,9 +11,9 @@
                     <h6 class="mb-4">Edit kategori</h6>
                     <form>
                         <div class="row mb-3">
-                            <label for="id_kategori" class="col-sm-2 col-form-label">Id Kategori</label>
+                            <label for="kategori_id" class="col-sm-2 col-form-label">Id Kategori</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="id_kategori" value="{{ $kategoris->id_kategori }}">
+                                <input type="text" class="form-control" name="kategori_id" value="{{ $kategoris->kategori_id }}">
                             </div>
                         </div>
                         <div class="row mb-3">

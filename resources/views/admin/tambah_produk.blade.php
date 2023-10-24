@@ -12,7 +12,7 @@
                         <div class="row mb-3">
                             <label for="id_produk" class="col-sm-2 col-form-label">Id Produk</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="id_produk">
+                                <input type="text" class="form-control" name="produk_id">
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -24,13 +24,13 @@
                         <div class="row mb-3">
                             <label for="harga" class="col-sm-2 col-form-label">Harga</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="harga">
+                                <input type="number" class="form-control" name="harga">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label for="stok" class="col-sm-2 col-form-label">Stok</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="stok">
+                                <input type="number" class="form-control" name="stok">
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -51,9 +51,9 @@
                             <option value="XL">XL</option>
                         </select>
                         <div class="row mb-3">
-                            <label for="id_kategori" class="col-sm-2 col-form-label">Id Kategori</label>
+                            <label for="kategori_id" class="col-sm-2 col-form-label">Id Kategori</label>
                             <div class="col-sm-10">
-                                <input type="text-area" class="form-control" name="id_kategori">
+                                <input type="text-area" class="form-control" name="kategori_id">
                             </div>
                         </div>
                 

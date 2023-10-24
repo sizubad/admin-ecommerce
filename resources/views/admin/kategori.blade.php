@@ -24,7 +24,7 @@
                                 @foreach ($kategoris as $index => $kategori)
                                    <tr>
                                     <td>{{ $index+1 }}</td>
-                                    <td>{{ $kategori->id_kategori }}</td>
+                                    <td>{{ $kategori->kategori_id }}</td>
                                     <td>{{ $kategori->nama_kategori }}</td>
                                     <td>
                                         <a href="/admin/{{ $kategori->id_kategori }}/edit_kategori" class="btn btn-success">
